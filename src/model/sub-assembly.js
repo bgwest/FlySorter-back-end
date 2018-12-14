@@ -23,6 +23,9 @@ const subAssemblySchema = mongoose.Schema({
     type: String,
   },
   // TOM: This connects the subAssembly to the Parts
+  partIDRef: {
+    type: String,
+  },
   parts: [
     {
       type: mongoose.Schema.Types.ObjectId,
